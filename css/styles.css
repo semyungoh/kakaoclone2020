@@ -32,15 +32,42 @@ body {
 
 #login-form input {
   border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   padding: 15px 0;
   font-size: 18px; /* placeholder size */
   margin-bottom: 25px;
+}
+
+/* login-form input is not [type="submit"], we are gonnna do border-bottom-color, transition. */
+
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   transition: border-bottom-color 0.3s ease-in;
 }
+
+/* pseudo element */
 #login-form input::placeholder {
   color: rgba(0, 0, 0, 0.4);
 }
 #login-form input:focus {
   border-bottom-color: var(--yellow);
+}
+/* 3:53
+#login-form input:focus {
+  border-bottom-color: var(--yellow);
+  -- login-form의 모든 input에는 var(--yellow)가 적용되지만, Submit Type의 Input은 적용이 안되므로, 이 엘리멘트를 이쁘게수정해보자.
+}
+*/
+
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  cursor: pointer;
+  padding: 20px 0px;
+  border-radius: 5px;
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
 }
