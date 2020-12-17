@@ -61,6 +61,8 @@
 .nav__btn {
   transform: translateY(50px);
   opacity: 0;
+  /* the reason i put this here is that the second child and the third child and the fourth child have animation delay,
+  that means ,for example, the last child has a 1.5s of no animation. last child is not opacity 0 and translateY so i just move it */
   animation: appearBtnAnimation 1s ease-in-out forwards;
 }
 
