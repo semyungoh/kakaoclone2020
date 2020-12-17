@@ -1,10 +1,10 @@
-.user-component {
-  display: flex;
-  align-items: center;
-}
+.user-component,
 .user-component__column:first-child {
   display: flex;
   align-items: center;
+}
+.user-component {
+  justify-content: space-between;
 }
 /* 사진수정 : 큰 버전, 중간 버전, 작은 버전이 있다. friends에 있는 아바타는 큰 버전이다. channel 밑에 있는 사진은 작은 버전이다. chats에 있는 사진은 보통 버전이다 */
 .user-component__avatar {
@@ -18,13 +18,25 @@
   width: 80px;
   height: 80px;
 }
+.user-component__avatar--sm {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+}
+
 .user-component__title {
   font-weight: 600;
   font-size: 22px;
 }
-
+.user-component__title--not-bold {
+  font-weight: 400;
+}
 .user-component__subtitle {
   margin-top: 10px;
   color: rgba(0, 0, 0, 0.5);
   font-size: 16px;
+}
+
+.user-component__column:last-child {
+  color: rgba(0, 0, 0, 0.5);
 }
