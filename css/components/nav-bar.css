@@ -1,0 +1,10 @@
+.nav {
+  background-color: #f9f9fa;
+  /* border부터 icon까지 padding 값은 20px */
+  padding: 20px 40px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
