@@ -1,0 +1,30 @@
+.status-bar {
+  /* 한줄로 오게 만들기 */
+  display: flex;
+  /*what is the property that we need to give to seperate along THE MAIN AXIS of flex? */
+  justify-content: center;
+  padding: 5px 3px;
+}
+.status-bar__column {
+  width: 33%;
+}
+.status-bar__column:first-child span {
+  margin-right: 5px;
+}
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.status-bar__column .fa-battery-full {
+  margin: 0px 5px;
+}
+/* CSS-HACK : To Center one container
+  1. justify-content : center;
+  2. to give all columns width 33%
+  3. to make the second column have the child on the center : .status-bar__column:nth-child(2){display:flex; justify-content:center;}  
+  4. for the last column, display:flex, justify-content:flex-end*/
