@@ -4,6 +4,10 @@
   /*what is the property that we need to give to seperate along THE MAIN AXIS of flex? */
   justify-content: center;
   padding: 5px 3px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* When we make an element fixed it basically breaks away from the body to another layer, so we need to give it proportions again. */
 }
 .status-bar__column {
   width: 33%;

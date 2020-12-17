@@ -1,10 +1,19 @@
 .nav {
   background-color: #f9f9fa;
   /* border부터 icon까지 padding 값은 20px */
-  padding: 20px 40px;
+  padding: 20px 50px;
+  border-top: 1px solid rgba(146, 144, 144, 0.2);
+  /* how do you make something stay where you want it to be even if you scroll?   */
+  position: fixed;
+  box-sizing: border-box;
+  bottom: 0;
+  width: 100%;
 }
 
 .nav__list {
   display: flex;
   justify-content: space-between;
+}
+.nav__link {
+  color: #2f363e;
 }
