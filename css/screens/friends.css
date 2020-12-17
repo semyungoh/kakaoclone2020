@@ -24,3 +24,30 @@
   justify-content: space-between;
   color: rgba(0, 0, 0, 0.5);
 }
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+    /* splash-screen은 여전히 있는데 마우스에 걸리지 않게 빠져나감. */
+  }
+}
+
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 144px;
+  animation: hideSplashScreen 1s ease-in-out forwards;
+  /* The final property value (as defined in the last @keyframes at-rule)
+   is maintained after the animation completes. */
+  animation-delay: 2s;
+}
