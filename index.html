@@ -33,9 +33,14 @@
         If you have a Kakao Account, log in with your email or phone number
       </p>
     </header>
-    <form id="login-form">
-      <input type="text" placeholder="Email or phone number" />
-      <input type="password" placeholder="Password" />
+    <form action="friends.html" method="GET" id="login-form">
+      <!-- form has 2 powerful attributes that is very important
+        1. action : to which page are you going to send this data 
+        2. method : method can be 2 things
+            2-1. POST : Post is to send information to the server in the backend.
+            2-2. GET : it is insecure. we shouldn't send username and password.  -->
+      <input name="username" type="text" placeholder="Email or phone number" />
+      <input name="password" type="password" placeholder="Password" />
       <input type="submit" value="Log in" />
       <!--<button></button> 으로도 만들 수 있다.-->
       <a href="#">Find Kakao Account or password</a>
