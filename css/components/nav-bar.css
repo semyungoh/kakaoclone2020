@@ -16,4 +16,32 @@
 }
 .nav__link {
   color: #2f363e;
+  position: relative;
+}
+
+.nav__notification {
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  /* body에서 5px 떨어지게 된다. 부모 엘리멘트에 relative 성질을 부여해야 한다. 
+    굳이 부모가 아니라 옆에 형제여도 된다.*/
+}
+
+.nav__notidot {
+  background-color: tomato;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  right: -10px;
+  bottom: 25px;
 }
