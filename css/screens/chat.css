@@ -1,0 +1,41 @@
+/* 화면 전체에 배경색깔을 준다. → body에 ID 부여
+2. 스크롤
+3. status-bar와 alt-header의 position fix
+3-1. background-color도 주었다. status-bar와 alt-header를 넘어갈 때 안보이도록 만들고 싶기 때문이다
+4. z-index 부여. z-index의 디폴트 = 0 */
+#chat-screen {
+  background-color: #abc1d1;
+  height: 400vh;
+}
+
+#chat-screen .alt-header {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  top: 10px;
+  z-index: 1;
+}
+
+#chat-screen .alt-header,
+#chat-screen .status-bar {
+  background-color: #abc1d1;
+}
+#chat-screen .status-bar {
+  z-index: 2;
+}
+.main-chat {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat__timestamp {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  border-radius: 40px;
+  /* 이상태면 div의 width이 100%라는 특성 때문에 너무 길어보인다. 
+  main-chat의 display를 flex로 주면 글자에 맞게 크기가 채워진다.*/
+  font-size: 14px;
+}
