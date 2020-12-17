@@ -8,11 +8,11 @@
     <title>Welcome to Kakao Clone!</title>
   </head>
   <body>
-    <div id="status-bar">
+    <div class="status-bar">
       <!-- status bar은 3개의 컬럼으로 이루어짐.-->
       <div class="status-bar__column">
         <span>No Service</span>
-        <!--★와이파이 아이콘 만들어야함★-->
+        <i class="fas fa-wifi"></i>
       </div>
       <!-- ※ status-bar column : 2개 class name-->
       <!-- 이름 안에는 부모와 자식을 명시함. -->
@@ -21,9 +21,14 @@
       </div>
       <div class="status-bar__column">
         <span>100%</span>
-        <!--배터리 아이콘 만들어야함-->
-        <!-- 충전중 아이콘 만들어야함 -->
+        <i class="fas fa-battery-full"></i>
+        <i class="fas fa-bolt"></i>
       </div>
     </div>
+
+    <script
+      src="https://kit.fontawesome.com/a79a4f751b.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
