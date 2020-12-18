@@ -36,8 +36,9 @@ channel 밑에 있는 사진은 작은 버전이다.
 }
 .user-component__subtitle {
   margin-top: 10px;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--opacity);
   font-size: 16px;
+  position: relative;
 }
 
 .user-component__column:last-child {
@@ -50,4 +51,8 @@ channel 밑에 있는 사진은 작은 버전이다.
 .user-component__time {
   display: block;
   margin-bottom: 10px;
+}
+
+.user-component__text > div {
+  position: relative;
 }

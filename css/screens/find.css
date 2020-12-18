@@ -16,14 +16,14 @@
 }
 .recommended-friends__title {
   font-size: 14px;
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--opacity);
 }
 
 .recommended-friends span {
   display: block;
   margin: 100px 0px;
   text-align: center;
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--opacity);
   font-size: 18px;
 }
 
