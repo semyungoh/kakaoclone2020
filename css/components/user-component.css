@@ -6,12 +6,15 @@
 .user-component {
   justify-content: space-between;
 }
-/* 사진수정 : 큰 버전, 중간 버전, 작은 버전이 있다. friends에 있는 아바타는 큰 버전이다. channel 밑에 있는 사진은 작은 버전이다. chats에 있는 사진은 보통 버전이다 */
+/* 사진수정 : 큰 버전, 중간 버전, 작은 버전이 있다. 
+friends에 있는 아바타는 큰 버전이다. 
+channel 밑에 있는 사진은 작은 버전이다.
+ chats에 있는 사진은 보통 버전이다 */
 .user-component__avatar {
   width: 70px;
   height: 70px;
   border-radius: 30px;
-  /* 중간버전의 css */
+  /* 중간버전 크기 */
   margin-right: 20px;
 }
 .user-component__avatar--xl {

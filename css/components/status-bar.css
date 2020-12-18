@@ -1,14 +1,17 @@
 .status-bar {
   /* 한줄로 오게 만들기 */
   display: flex;
-  /*what is the property that we need to give to seperate along THE MAIN AXIS of flex? */
+  /*what is the property that we need to give to seperate 
+  along THE MAIN AXIS of flex? */
   justify-content: center;
   padding: 5px 3px;
   position: fixed;
   top: 0;
   width: 100%;
   box-sizing: border-box;
-  /* When we make an element fixed it basically breaks away from the body to another layer, so we need to give it proportions again. */
+  /* When we make an element fixed it basically breaks 
+  away from the body to another layer, 
+  so we need to give it proportions again. */
 }
 .status-bar__column {
   width: 33%;
@@ -29,7 +32,7 @@
   margin: 0px 5px;
 }
 /* CSS-HACK : To Center one container
-  1. justify-content : center;
-  2. to give all columns width 33%
+  1. justify-content : center; (Flex container)
+  2. to give all columns width 33% (Flex child)
   3. to make the second column have the child on the center : .status-bar__column:nth-child(2){display:flex; justify-content:center;}  
   4. for the last column, display:flex, justify-content:flex-end*/
